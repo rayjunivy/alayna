@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silly Me</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f3e5f5; /* Light purple background */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff69b4; /* Pink color for the title */
+        }
+        h2 {
+            color: #9c27b0; /* Darker purple for subheadings */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff; /* White background for the content */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .decorative-text {
+            font-family: 'Dancing Script', cursive; /* Fancy script font */
+            color: #ff69b4; /* Pink text color */
+            font-size: 1.4em;
+            padding: 20px;
+            background-color: #ffe4e1; /* Light pink background */
+            border-radius: 15px;
+            border: 4px solid #ff69b4; /* Pink border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Text box shadow */
+            margin: 20px auto;
+            width: 80%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #ff69b4; /* Pink buttons */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+        }
+        .button:hover {
+            background-color: #ba55d3; /* Lighter purple on hover */
+        }
+        .memory-section {
+            display: none; /* Hide sections by default */
+            margin-top: 20px;
+        }
+        .photo {
+            width: 45%;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            border: 5px solid #ff69b4; /* Pink border for photos */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for photos */
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        function showMemory(memoryId) {
+            // Hide all memory sections first
+            const sections = document.querySelectorAll('.memory-section');
+            sections.forEach(section => section.style.display = 'none');
+            
+            // Display the clicked memory section
+            document.getElementById(memoryId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Silly Me</h1>
+
+        <!-- Heartfelt message with beautiful styling -->
+        <div class="decorative-text">
+            I understand that the idea of online dating may fill you with apprehension, and I could be mistaken, but my heart fervently yearns to be your boyfriend for eternity. Even if you choose to turn me down, I will patiently await your decision, for I am wholly and unconditionally yours.
+        </div>
+
+        <!-- Buttons for each memory -->
+        <button class="button" onclick="showMemory('memory1')">Memory One</button>
+        <button class="button" onclick="showMemory('memory2')">Memory Two</button>
+        <button class="button" onclick="showMemory('memory3')">Memory Three</button>
+        <button class="button" onclick="showMemory('memory4')">Memory Four</button>
+        <button class="button" onclick="showMemory('memory5')">Memory Five</button>
+        <button class="button" onclick="showMemory('memory6')">Memory Six</button>
+        <button class="button" onclick="showMemory('memory7')">Memory Seven</button>
+
+        <!-- Memory sections (two images per section) -->
+        <div id="memory1" class="memory-section">
+            <h2>Memory One</h2>
+            <img src="fahima3.jpg" alt="Fahima 1" class="photo">
+            <img src="jun3.jpg" alt="Jun 1" class="photo">
+            <p>It was on the poignant date of 9/11 in the year 2024, when you implored me to align our profile pictures. However, in my lightheartedness, I sent forth images that had no resemblance, merely jesting in the moment.</p>
+        </div>
+
+        <div id="memory2" class="memory-section">
+            <h2>Memory Two</h2>
+            <img src="fahima2.jpg" alt="Fahima 2" class="photo">
+            <img src="jun2.jpg" alt="Jun 2" class="photo">
+            <p>We opted for this profile picture since the previous ones didn't meet our aesthetic standards.</p>
+        </div>
+
+        <div id="memory3" class="memory-section">
+            <h2>Memory Three</h2>
+            <img src="fahima1.jpg" alt="Fahima 3" class="photo">
+            <img src="jun1.jpg" alt="Jun 3" class="photo">
+            <p>I came across this profile picture on Pinterest and thought it was adorable. I asked if you wanted to match because I was really enjoying our connection, even though we hadn't chatted in DMs back then....and I still remember it was 13th of October.</p>
+        </div>
+
+        <div id="memory4" class="memory-section">
+            <h2>Memory Four</h2>
+            <img src="fahima4.jpg" alt="Fahima 4" class="photo">
+            <img src="jun4.jpg" alt="Jun 4" class="photo">
+            <p>I really like Robert Partition! Haha, I came across this profile picture on Pinterest again on September 21, 2024. I suggested changing to this one, and you agreed. Originally, it was a colorful matching profile picture, but we ultimately opted for the black and white version.</p>
+        </div>
+
+        <div id="memory5" class="memory-section">
+            <h2>Memory Five</h2>
+            <img src="fahima5.jpg" alt="Fahima 5" class="photo">
+            <img src="jun5.jpg" alt="Jun 5" class="photo">
+            <p>Our conversation in DMs kicked off on September 27, 2024, when I inquired whether you preferred the filters or the authentic version of me. We then switched to this profile picture just yesterday, September 28, 2024.</p>
+        </div>
+
+        <div id="memory6" class="memory-section">
+            <h2>Memory Six</h2>
+            <img src="fahima6.jpg" alt="Fahima 6" class="photo">
+            <img src="jun6.jpg" alt="Jun 6" class="photo">
+            <p>I genuinely wanted to match this profile picture with you, but I hesitated to ask since it's a kissing image... but, I went for it, and it turns out you were okay with it. And...also it was on 6 October..haha.</p>
+        </div>
+
+        <div id="memory7" class="memory-section">
+            <h2>Memory Seven</h2>
+            <img src="fahima7.jpg" alt="Fahima 7" class="photo">
+            <img src="jun7.jpg" alt="Jun 7" class="photo">
+            <p>We matched this one on October 11th, and our connection feels so intimate now... is it okay if I refer to you as mine?</p>
+        </div>
+
+        <footer>
+            <p>Made with love for my sweet girl! ❤️</p>
+        </footer>
+    </div>
+
+</body>
+</html>
